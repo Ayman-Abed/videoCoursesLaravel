@@ -1,0 +1,12 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Page extends Model
+{
+    use SoftDeletes;
+    protected $fillable = ['name', 'description','meta_keywords', 'meta_description'];
+}
